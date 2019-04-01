@@ -1,0 +1,10 @@
+.main-icon {
+    padding: 5px 10px;
+    font-size: 30px;
+    width: 55px;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+}

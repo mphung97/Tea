@@ -23,6 +23,7 @@
     background: #555;
 }
 
-.listheight {
-    height: calc(100vh-137px);
+.tables {
+    overflow-y: scroll;
+    height: calc(100vh - 70px);
 }

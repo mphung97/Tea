@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import Table from "./table/Table";
-import Header from "./header/Header";
+import { Sidebar, Header, Table } from "../index";
 import "./style.css";
 
-const data = require("./data.json");
+const data = require("../fakedata.json");
 
 class TableList extends Component {
   state = {
@@ -15,17 +14,17 @@ class TableList extends Component {
   };
 
   render() {
-    const h = window.innerHeight - 100;
     return (
       <div className="container-fluid">
-        <div className="col-12">
-          <div className="row">
+        <div className="row">
+          <Sidebar />
+          <div className="col-10">
             <Header />
-          </div>
-          <div className="row px-5" style={{ overflowY: "scroll", height: h }}>
-            {this.state.tables.map(t => (
-              <Table key={t.no} {...t} onClick={() => this.click()} />
-            ))}
+            <div className="row tables">
+              {this.state.tables.map(t => (
+                <Table key={t.no} {...t} onClick={() => this.click()} />
+              ))}
+            </div>
           </div>
         </div>
       </div>

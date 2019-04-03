@@ -1,4 +1,5 @@
 .sidebar {
-    height: 500px;
-    border-radius: 3px;
+    height: 100vh;
+    width: 100%;
+    border-radius: 0;
 }

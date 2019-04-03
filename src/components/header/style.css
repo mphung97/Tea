@@ -1,0 +1,14 @@
+.btn-taskbar {
+    background-color: #ffffff !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    min-width: 100px;
+}
+
+.actionbar {
+    height: 70px;
+}
+
+.shadow {
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}

@@ -17,8 +17,7 @@ class TableList extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <Sidebar />
-          <div className="col-10">
+          <div className="col-12">
             <Header />
             <div className="row tables">
               {this.state.tables.map(t => (

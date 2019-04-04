@@ -1,27 +1,33 @@
 import React from "react";
+import "./style.css";
 
 const Food = props => {
-  const { name, price } = props;
   return (
-    <div className="col-3 p-4">
-      <div className="card">
-        <img
-          className="card-img-top"
-          src="https://picsum.photos/200/100"
-          alt="Card cap"
-        />
-        <div className="card-body py-2 text-center">
-          <h4 className="card-title mb-1">{name}</h4>
-          <div className="clearfix">
-            <h5 className="float-left text-danger">{price}</h5>
-            <h6 className="float-right">/phần</h6>
+    <div className="food">
+        <div className="card">
+          <img
+            className="card-img-top"
+            src="https://picsum.photos/150/100"
+            alt="Card cap"
+          />
+          <div className="card-body p-0 text-center">
+            <p className="m-0 food-name">
+              <span className="align-middle">Cơm sườn bì chả trứng</span>
+            </p>
+            <div className="clearfix p-1">
+              <p className="d-inline float-left text-danger m-0">
+                <b>100000đ</b>
+              </p>
+              <button
+                type="button"
+                className="d-inline float-right btn btn-link p-0"
+              >
+                Chọn
+              </button>
+            </div>
           </div>
-          <a href="/" className="btn btn-success">
-            Chọn món
-          </a>
         </div>
       </div>
-    </div>
   );
 };
 
